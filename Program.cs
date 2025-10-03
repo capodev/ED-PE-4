@@ -1,3 +1,4 @@
+
 class GrafoForm : Form
 {
     private List<(string, string)> edges = new List<(string, string)>();
@@ -7,7 +8,7 @@ class GrafoForm : Form
 
     public GrafoForm(string rutaArchivo)
     {
-        
+
         this.Width = 600;
         this.Height = 600;
 
@@ -28,6 +29,7 @@ class GrafoForm : Form
             }
         }
     }
+
 
     private void GenerarPosiciones()
     {
@@ -62,6 +64,8 @@ class GrafoForm : Form
     }
 }
 
+
+
 class Program
 {
     [STAThread]
@@ -69,7 +73,7 @@ class Program
     {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
-        string archivo = "grafo.txt";
+        string archivo = "grafo1.txt";
         string archivo2 = "grafo2.txt"; // archivo en la misma carpeta
 
         GrafoForm form1 = new GrafoForm(archivo);
@@ -80,3 +84,4 @@ class Program
         Application.Run(form1);
     }
 }
+
